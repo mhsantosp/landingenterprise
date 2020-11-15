@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Pantallas */
+
+@desktop: 1200px;
+@tablet: 768px;
+@mobile: 320px;
 :root {
   /*Fuentes*/
   --regular: 400;
@@ -15,10 +21,6 @@
   --textos: #54585a;
   --text-footer: #B8B8B9;
   --gris-perfil: #E5E7E9;
-  /* Pantallas */
-  --desktop: 1200px;
-  --tablet: 768px;
-  --mobile: 320px;
 }
 
 body {
@@ -34,6 +36,10 @@ header {
 
 header article.nav .menu {
   opacity: 0.8;
+}
+
+header article.nav .menu .grid {
+  margin: 0;
 }
 
 .ui.inverted.teal.menu .item {
@@ -53,12 +59,17 @@ header article.nav .menu {
   text-transform: uppercase;
 }
 
-.ui.inverted.teal.menu .header {
+.ui.inverted.teal.menu .item.header {
   font-size: 16px;
+  height: 60px;
 }
 
 .ui.inverted.teal.menu .item {
   font-size: 15px;
+}
+
+.item.right {
+  padding: 0px;
 }
 
 .hero {
@@ -70,8 +81,20 @@ header article.nav .menu {
 }
 
 @media screen and (min-width: 320px) {
-  body .hero {
+  .item.right {
+    height: 45px;
+  }
+  .right a.item {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+  .hero {
     height: 421px;
+  }
+  .hero div.box {
+    width: 290px;
+    top: 22rem;
+    left: 1rem;
   }
   main .ui.container .equipo::after {
     top: 115%;
@@ -89,8 +112,16 @@ header article.nav .menu {
 }
 
 @media screen and (min-width: 768px) {
-  body .hero {
+  .item.right {
+    height: 60px;
+  }
+  .hero {
     height: 421px;
+  }
+  .hero div.box {
+    width: 412px;
+    top: 23.9rem;
+    left: 2rem;
   }
   main .ui.container .equipo::after {
     top: 89.8%;
@@ -105,8 +136,13 @@ header article.nav .menu {
 }
 
 @media screen and (min-width: 1200px) {
-  body .hero {
+  .hero {
     height: 550px;
+  }
+  .hero div.box {
+    width: 421px;
+    top: 33.15rem;
+    left: 7rem;
   }
   main .ui.container .equipo::after {
     top: 94.7%;
@@ -128,10 +164,7 @@ header article.nav .menu {
   background-color: white;
   opacity: .9;
   padding: 15px 30px;
-  width: 441px;
   position: absolute;
-  top: 33.15rem;
-  left: 7rem;
   line-height: 1.2;
 }
 
@@ -175,24 +208,35 @@ main .ui.container .equipo::after {
   transform: translateY(-50%) translateX(50%) rotate(-45deg);
 }
 
-h2,
-h3 {
+h1,
+h2 {
   color: var(--titles);
   font-family: var(--rubik);
   font-weight: var(--medium);
   text-align: center;
 }
 
-h2 {
+h1 {
   font-size: 24px;
   text-transform: uppercase;
   margin-bottom: 15px;
 }
 
-h3 {
+h2 {
   font-size: 22px;
   text-transform: capitalize;
   margin-bottom: 15px;
+}
+
+.ui.items>.item>.content>h3.header {
+  font-size: 20px !important;
+  color: var(--sub-titles);
+  font-family: var(--openSans);
+  font-weight: var(--regular);
+}
+
+.ui.items>.item>.content>h4 {
+  font-family: monospace;
 }
 
 p {
@@ -253,6 +297,18 @@ main #quienes-somos .ui.items .perfilTwo .image img,
 main #quienes-somos .ui.items .perfilThree .image img {
   border-radius: 5px;
   height: 100%;
+}
+
+main #quienes-somos .ui.items .perfilOne .content a,
+main #quienes-somos .ui.items .perfilTwo .content a,
+main #quienes-somos .ui.items .perfilThree .content a {
+  color: teal;
+}
+
+main #quienes-somos .ui.items .perfilOne .content a:hover,
+main #quienes-somos .ui.items .perfilTwo .content a:hover,
+main #quienes-somos .ui.items .perfilThree .content a:hover {
+  color: #1e70bf;
 }
 
 footer.ui.vertical.footer.segment {
