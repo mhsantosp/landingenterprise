@@ -1,14 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Contacto</title>
+    <link rel="icon" href="./img/favicon3.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/semantic.min.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+
+    <title>Landing Enterprise Reto Ac. Geek</title>
   </head>
 
   <body>
+    <header>
+      <section>
+        <article class="nav">
+          <div class="ui menu teal inverted top fixed">
+            <div class="ui container grid">
+              <a class="item header" href="/landingenterprise/">Equipo 5</a>
 
+              <div class="item right">
+                <a class="item" href="index.html#equipo">Equipo</a>
+                <a class="item" href="index.html#quienes-somos">Quiénes somos</a>
+                <a class="item" href="contacto.html">Contacto</a>
+              </div>
+            </div>
+          </div>
+        </article>
+        <article class="hero hero-contacto"></article>
+      </section>
+    </header>
+
+    <main>
+      <section class="ui container">
+        <article class="ui text container">
+          <h1>Contacto</h1>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sit amet auctor nisl, sit amet rhoncus leo. Maecenas eget erat id sapien porta consectetur eget ac lectus.</p>
+          <p>Todos los campos marcados con <strong>*</strong> son obligatorios.</p>
+        </article>
+      </section>
+
+      <section id="formulario">
+        <article class="ui container">
+          <div class="ui container">
+            <form class="ui form">
+              <div class="field">
+                <label>Nombre completo *</label>
+                <input type="text" name="name" placeholder="Nombre">
+              </div>
+
+              <div class="fields">
+                <div class="twelve wide field">
+                  <label>Email *</label>
+                  <input type="text" name="phone" placeholder="name@name.com">
+                </div>
+                <div class="four wide field">
+                  <label>Teléfono</label>
+                  <input type="text" name="shipping[address-2]" placeholder="Ej: 1235789765">
+                </div>
+              </div>
+              <div class="field">
+                <label>Mensaje *</label>
+                <textarea rows="2" placeholder="¿Qué necesitas?"></textarea>
+              </div>
+              <button class="ui button right floated teal" type="submit">Enviar</button>
+            </form>
+          </div>
+        </article>
+      </section>
+    </main>
+
+    <footer class="ui vertical footer segment">
+      <div class="ui container">
+        <div class="ui stackable divided equal height stackable grid">
+          <div class="three wide column" id="nomEq">
+            <h5>Equipo 5 2020</h5>
+          </div>
+          <div class="three wide column" id="footerMenu">
+            <div class="ui link list">
+              <a href="#equipo" class="item">EQUIPO</a>
+              <a href="#quienes-somos" class="item">QUIÉNES SOMOS</a>
+              <a href="#contacto" class="item">CONTACTO</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <script src="./css/semantic.min.js"></script>
   </body>
 
 </html>
