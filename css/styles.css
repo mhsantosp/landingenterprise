@@ -105,6 +105,9 @@ header article.nav .menu .grid {
   main .ui.container .equipo::after {
     top: 115%;
   }
+  main #quienes-somos .ui.items .item .content {
+    padding: 0;
+  }
   #quienes-somos .item .image {
     width: 180px;
     height: 180px;
